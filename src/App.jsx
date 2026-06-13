@@ -84,7 +84,7 @@ function App() {
         {/* Profile Image */}
 
         <img
-          src="./santhoshi.jpg.png"
+          src={`${import.meta.env.BASE_URL}santhoshi.jpg.png`}
           alt="profile"
           style={{
             width: "130px",
