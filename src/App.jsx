@@ -1,7 +1,7 @@
-import { Typewriter } from "react-simple-typewriter"
+import profile from "../public/profile.png";
+import { Typewriter } from "react-simple-typewriter";
 
 function App() {
-
   const cardStyle = {
     background: "#FFFFFF",
     padding: "20px 30px",
@@ -14,23 +14,21 @@ function App() {
     transition: "0.3s",
     cursor: "pointer",
     color: "#0F172A",
-  }
+  };
 
   const buttonStyle = {
     padding: "12px 28px",
     borderRadius: "12px",
     border: "none",
-    background:
-      "linear-gradient(to right, #2563EB, #1D4ED8)",
+    background: "linear-gradient(to right, #2563EB, #1D4ED8)",
     color: "white",
     fontSize: "18px",
     fontWeight: "bold",
     cursor: "pointer",
     boxShadow: "0 0 20px rgba(37,99,235,0.25)",
-  }
+  };
 
   return (
-
     <div
       style={{
         background:
@@ -41,7 +39,6 @@ function App() {
         fontFamily: "Arial",
       }}
     >
-
       {/* Glow Effects */}
 
       <div
@@ -80,11 +77,10 @@ function App() {
           marginTop: "50px",
         }}
       >
-
         {/* Profile Image */}
 
         <img
-          src="/portfolio/profile.png?v=2"
+          src={profile}
           alt="profile"
           style={{
             width: "130px",
@@ -118,7 +114,6 @@ function App() {
             fontSize: "30px",
           }}
         >
-
           <Typewriter
             words={[
               "CSE Student",
@@ -129,7 +124,6 @@ function App() {
             cursor
             cursorStyle="|"
           />
-
         </h2>
 
         {/* Buttons */}
@@ -143,15 +137,12 @@ function App() {
             flexWrap: "wrap",
           }}
         >
-
           <a
             href="https://github.com/SANTHU-576"
             target="_blank"
             rel="noreferrer"
           >
-            <button style={buttonStyle}>
-              GitHub
-            </button>
+            <button style={buttonStyle}>GitHub</button>
           </a>
 
           <a
@@ -159,9 +150,7 @@ function App() {
             target="_blank"
             rel="noreferrer"
           >
-            <button style={buttonStyle}>
-              LinkedIn
-            </button>
+            <button style={buttonStyle}>LinkedIn</button>
           </a>
 
           <a
@@ -169,13 +158,9 @@ function App() {
             target="_blank"
             rel="noreferrer"
           >
-            <button style={buttonStyle}>
-              Resume
-            </button>
+            <button style={buttonStyle}>Resume</button>
           </a>
-
         </div>
-
       </div>
 
       {/* About */}
@@ -186,7 +171,6 @@ function App() {
           textAlign: "center",
         }}
       >
-
         <h1
           style={{
             color: "#2563EB",
@@ -211,7 +195,6 @@ function App() {
           I enjoy building modern responsive websites with
           beautiful UI and smooth animations.
         </p>
-
       </div>
 
       {/* Skills */}
@@ -222,7 +205,6 @@ function App() {
           textAlign: "center",
         }}
       >
-
         <h1
           style={{
             color: "#2563EB",
@@ -241,7 +223,6 @@ function App() {
             marginTop: "40px",
           }}
         >
-
           {[
             "Python",
             "Java",
@@ -250,18 +231,11 @@ function App() {
             "React",
             "Flask",
           ].map((skill) => (
-
-            <div
-              key={skill}
-              style={cardStyle}
-            >
+            <div key={skill} style={cardStyle}>
               {skill}
             </div>
-
           ))}
-
         </div>
-
       </div>
 
       {/* Projects */}
@@ -272,7 +246,6 @@ function App() {
           textAlign: "center",
         }}
       >
-
         <h1
           style={{
             color: "#2563EB",
@@ -291,21 +264,12 @@ function App() {
             marginTop: "40px",
           }}
         >
+          <div style={cardStyle}>Fraud Detection System</div>
 
-          <div style={cardStyle}>
-            Fraud Detection System
-          </div>
+          <div style={cardStyle}>Portfolio Website</div>
 
-          <div style={cardStyle}>
-            Portfolio Website
-          </div>
-
-          <div style={cardStyle}>
-            LearnHub Platform
-          </div>
-
+          <div style={cardStyle}>LearnHub Platform</div>
         </div>
-
       </div>
 
       {/* Certifications */}
@@ -316,7 +280,6 @@ function App() {
           textAlign: "center",
         }}
       >
-
         <h1
           style={{
             color: "#2563EB",
@@ -335,24 +298,16 @@ function App() {
             marginTop: "40px",
           }}
         >
-
           {[
             "Python Certification",
             "Web Development",
             "Java Programming",
           ].map((cert) => (
-
-            <div
-              key={cert}
-              style={cardStyle}
-            >
+            <div key={cert} style={cardStyle}>
               {cert}
             </div>
-
           ))}
-
         </div>
-
       </div>
 
       {/* Contact */}
@@ -364,7 +319,6 @@ function App() {
           paddingBottom: "60px",
         }}
       >
-
         <h1
           style={{
             color: "#2563EB",
@@ -394,54 +348,9 @@ function App() {
         >
           📱 +91 9963697385
         </p>
-
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            gap: "20px",
-            flexWrap: "wrap",
-            marginTop: "20px",
-          }}
-        >
-
-          <a
-            href="https://github.com/SANTHU-576"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button style={buttonStyle}>
-              GitHub
-            </button>
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/santhoshi-medidhi-119919292"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button style={buttonStyle}>
-              LinkedIn
-            </button>
-          </a>
-
-          <a
-            href="/Santhoshi_Medidhi_resume.pdf"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button style={buttonStyle}>
-              Resume
-            </button>
-          </a>
-
-        </div>
-
       </div>
-
     </div>
-
-  )
+  );
 }
 
-export default App
+export default App;
