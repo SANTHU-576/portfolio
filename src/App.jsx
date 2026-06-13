@@ -84,7 +84,7 @@ function App() {
         {/* Profile Image */}
 
         <img
-          src="/santhoshi.jpg.png"
+          src="/portfolio/santhoshi.jpg.png"
           alt="profile"
           style={{
             width: "130px",
