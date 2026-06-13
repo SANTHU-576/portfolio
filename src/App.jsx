@@ -80,7 +80,7 @@ function App() {
         {/* Profile Image */}
 
         <img
-            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330"
+          src={`${import.meta.env.BASE_URL}profile.png`}
           alt="profile"
           style={{
             width: "130px",
