@@ -1,4 +1,4 @@
-import profile from "../public/profile.png";
+import profile from "./assets/profile.png";
 import { Typewriter } from "react-simple-typewriter";
 
 function App() {
@@ -80,8 +80,8 @@ function App() {
         {/* Profile Image */}
 
         <img
-          src={`${import.meta.env.BASE_URL}profile.png`}
-          alt="profile"
+          src={profile}
+          alt="profile" />
           style={{
             width: "130px",
             height: "130px",
